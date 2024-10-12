@@ -12,10 +12,11 @@ const ResultsPage = ({ questions, userAnswers }) => {
 
   const { correct, incorrect } = calculateResults();
   const total = questions.length;
-  const percentage = total > 0 ? ((correct / total) * 100).toFixed(2) : 0; // Calculate percentage
+  const percentage = total > 0 ? ((correct / total) * 100).toFixed(2) : 0;
 
   const handleBackHome = () => {
-    navigate('/'); // Navigate back to the home page
+    localStorage.clear(); // Menghapus semua data di localStorage
+    navigate('/'); // Navigasi kembali ke halaman utama
   };
 
   return (
@@ -25,8 +26,8 @@ const ResultsPage = ({ questions, userAnswers }) => {
       <p>Correct Answers: {correct}</p>
       <p>Incorrect Answers: {incorrect}</p>
       <p>Score: {correct} / {total}</p>
-      <p>Percentage: {percentage}%</p> {/* Display percentage score */}
-      <button onClick={handleBackHome}>Back Home</button> {/* Updated button text */}
+      <p>Percentage: {percentage}%</p>
+      <button onClick={handleBackHome}>Back Home</button>
     </div>
   );
 };
