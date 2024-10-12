@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient( #c78fff, rgb(3, 217, 255),#8800c2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-page {
+  background: linear-gradient(transparent,#d9baff, transparent);
+  padding: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.login-page:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.login-tittle {
+  position: relative;
+  right: 120px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(97, 9, 229);
+}
+
+.quiz-tittle {
+  top: -40px;
+  color: white;
+  font-size: 35px; /* Ukuran default font */
+  font-weight: bold;
+  letter-spacing: 1px; /* Menambah jarak antar huruf */
+  transition: all 0.5s ease-in-out; /* Mengatur transisi secara keseluruhan */
+  text-align: center;
+  position: relative; /* Agar efek garis bawah bisa diatur posisinya */
+}
+
+.quiz-tittle::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: linear-gradient( rgb(0, 217, 255), #e3e2e5,#5e0087);
+  bottom: -5px; /* Posisi garis tepat di bawah teks */
+  left: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.quiz-tittle:hover {
+  color: #4700c1; /* Warna teks berubah saat hover */
+  font-size: 30px; /* Teks sedikit membesar */
+  letter-spacing: 2px; /* Jarak antar huruf bertambah */
+}
+
+.quiz-tittle:hover::after {
+  width: 100%; /* Garis bawah meluas ke seluruh teks saat hover */
+} 
+
+h2 {
+  color: white; /* White color for the subtitle */
+  margin-bottom: 20px; /* Spacing below the subtitle */
+}
+
+.input-login {
+  border-radius: 10px;
+}
+
+.login-input:focus {
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Highlight on focus */
+  border: 20px solid white; /* Border color on focus */
+}
+
+
+.login-btn {
+  margin: 20px;
+  background: linear-gradient( #a54bff, rgb(3, 217, 255));
+  color: #dadada; /* Green text */
+  font-weight: 800;
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  font-size: 1.2em; /* Font size */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Transition for background color and scaling */
+}
+
+.login-btn:hover {
+  background: linear-gradient( #21ffde, rgb(87, 255, 107));
+  color: rgb(255, 254, 254); /* Change text color on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+@media (max-width: 480px) { 
+  .input-login {
+    border-radius: 10px;
+    position: relative;
+    right: 10px;
+  }
+}
