@@ -19,7 +19,7 @@ body {
 }
 
 .login-page:hover {
-  transform: scale(1.05); /* Slightly scale up on hover */
+  transform: scale(1.05);
 }
 
 .login-tittle {
@@ -32,12 +32,12 @@ body {
 .quiz-tittle {
   top: -40px;
   color: white;
-  font-size: 35px; /* Ukuran default font */
+  font-size: 35px; 
   font-weight: bold;
-  letter-spacing: 1px; /* Menambah jarak antar huruf */
-  transition: all 0.5s ease-in-out; /* Mengatur transisi secara keseluruhan */
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
   text-align: center;
-  position: relative; /* Agar efek garis bawah bisa diatur posisinya */
+  position: relative; 
 }
 
 .quiz-tittle::after {
@@ -46,24 +46,24 @@ body {
   width: 0;
   height: 2px;
   background: linear-gradient( rgb(0, 217, 255), #e3e2e5,#5e0087);
-  bottom: -5px; /* Posisi garis tepat di bawah teks */
+  bottom: -5px;
   left: 0;
   transition: width 0.5s ease-in-out;
 }
 
 .quiz-tittle:hover {
-  color: #4700c1; /* Warna teks berubah saat hover */
-  font-size: 30px; /* Teks sedikit membesar */
-  letter-spacing: 2px; /* Jarak antar huruf bertambah */
+  color: #4700c1;
+  font-size: 30px;
+  letter-spacing: 2px; 
 }
 
 .quiz-tittle:hover::after {
-  width: 100%; /* Garis bawah meluas ke seluruh teks saat hover */
+  width: 100%; 
 } 
 
 h2 {
-  color: white; /* White color for the subtitle */
-  margin-bottom: 20px; /* Spacing below the subtitle */
+  color: white; 
+  margin-bottom: 20px; 
 }
 
 .input-login {
@@ -71,29 +71,28 @@ h2 {
 }
 
 .login-input:focus {
-  outline: none; /* Remove outline */
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Highlight on focus */
-  border: 20px solid white; /* Border color on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+  border: 20px solid white; 
 }
-
 
 .login-btn {
   margin: 20px;
   background: linear-gradient( #a54bff, rgb(3, 217, 255));
-  color: #dadada; /* Green text */
+  color: #dadada;
   font-weight: 800;
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  padding: 10px 20px; /* Padding */
-  font-size: 1.2em; /* Font size */
-  cursor: pointer; /* Pointer on hover */
-  transition: background-color 0.3s, transform 0.2s; /* Transition for background color and scaling */
+  border: none;
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .login-btn:hover {
   background: linear-gradient( #21ffde, rgb(87, 255, 107));
-  color: rgb(255, 254, 254); /* Change text color on hover */
-  transform: scale(1.05); /* Scale up on hover */
+  color: rgb(255, 254, 254);
+  transform: scale(1.05);
 }
 
 @media (max-width: 480px) { 

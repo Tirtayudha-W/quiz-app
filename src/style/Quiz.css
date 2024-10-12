@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background: linear-gradient( #c78fff, rgb(3, 217, 255),#8800c2);
-    color: white; /* Text color */
+    color: white;
   }
   
   .quiz-container {
@@ -14,11 +14,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    max-width: 600px; /* Limit width for better readability */
-    margin: auto; /* Center the container */
-    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   }
   
   .loading, .error {
@@ -27,51 +27,51 @@ body {
   }
   
   .quiz-content {
-    text-align: center; /* Center text */
+    text-align: center;
   }
   
   .question {
-    font-size: 1.5em; /* Increased font size for question */
-    margin-bottom: 20px; /* Spacing below question */
+    font-size: 1.5em; 
+    margin-bottom: 20px;
   }
   
   .options-container {
     display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 15px; /* Space between buttons */
+    flex-direction: column;
+    gap: 15px;
   }
   
   .option-btn {
-    background-color: #00ff08; /* Green background for buttons */
-    color: white; /* White text */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px; /* Padding for buttons */
-    font-size: 1.1em; /* Increased font size for buttons */
-    cursor: pointer; /* Pointer on hover */
-    transition: background-color 0.3s, transform 0.2s; /* Transition for background color */
+    background-color: #00ff08; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.1em; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
   }
   
   .option-btn:hover {
-    background-color: #b3ff00; /* Darker green on hover */
-    transform: scale(1.05); /* Scale up on hover */
+    background-color: #b3ff00;
+    transform: scale(1.05);
   }
   
   .restart-btn {
-    background-color: #ff5722; /* Red background for restart button */
-    color: white; /* White text */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 20px; /* Padding for button */
-    font-size: 1.2em; /* Increased font size */
-    cursor: pointer; /* Pointer on hover */
-    transition: background-color 0.3s, transform 0.2s; /* Transition for background color */
-    margin-top: 20px; /* Margin above the button */
+    background-color: #ff5722; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
   }
   
   .restart-btn:hover {
-    background-color: #e64a19; /* Darker red on hover */
-    transform: scale(1.05); /* Scale up on hover */
+    background-color: #e64a19;
+    transform: scale(1.05);
   }
   
   @media (max-width: 480px) { 

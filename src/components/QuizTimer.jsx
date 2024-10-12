@@ -9,7 +9,7 @@ const QuizTimer = ({ timeLimit, onTimeOut }) => {
       return;
     }
 
-    const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000000);
+    const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
 
     return () => clearTimeout(timer);
   }, [timeLeft, onTimeOut]);
